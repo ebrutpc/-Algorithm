@@ -1,0 +1,21 @@
+
+n=int(input("bir sayi gir: "))
+a=n**2
+print("a",a)
+first=0
+end=0
+bs=0
+while(a>0):
+    a=a//10
+    bs+=1
+print("bs",bs//2)
+if(bs%2!=0):
+    bs+=1
+first=n**2//(10**(bs//2))
+#print(first)
+end=(n**2-first*(10**(bs//2)))
+#print(end)
+if((end+first)==n):
+    print("kaprekar number: ",n)
+else:
+    print("No kaprekar number" ,n)
