@@ -1,3 +1,5 @@
+#Pangram is defined as a sentence that contains every letter of the alphabet.
+
 pangramexp1="Pijamalı hasta yağız şoföre çabucak güvendi"
 pangramexp2="Hayvancık tüfekçide bagaj törpüsü olmuş"
 
