@@ -16,15 +16,14 @@ int main()
 void kontrolPalindrom(char kelimePal[],int index){
 
   int uzunluk = strlen(kelimePal);
-  char c[25];
-  char b[25];
+  char c;
+  char b;
   int s=0;
  
-  c[index]= kelimePal[index];
-  b[index]= kelimePal[uzunluk-1-index];
-  //printf("c:%c b:%c\n ",c[index],b[index]);
-  //printf("index:%d\n ",index);
-  if(c[index]==b[index])
+  c= kelimePal[index];
+  b= kelimePal[uzunluk-1-index];
+ 
+  if(c==b)
      s=1;
   
   if(index < uzunluk-1){
@@ -37,6 +36,4 @@ void kontrolPalindrom(char kelimePal[],int index){
     else
       printf("p");
                    }
- 
-   
- 
+  }
